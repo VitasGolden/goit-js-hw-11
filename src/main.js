@@ -40,7 +40,11 @@ form.addEventListener('submit', event => {
         }
       })
       .catch(error => {
-        console.log(error);
+        iziToast.error({
+          message:
+            'Sorry, there are no images matching your search query. Please try again!',
+          position: 'topRight',
+        });
       })
       .finally(() => {
         hideLoader();

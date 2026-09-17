@@ -8,8 +8,6 @@ const lightbox = new SimpleLightbox.default('.gallery a', {
   captionDelay: 250,
 });
 
-console.log('Що таке SimpleLightbox:', SimpleLightbox);
-
 export function createGallery(images) {
   const markup = images
     .map(
