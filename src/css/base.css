@@ -99,3 +99,10 @@ main:has(.back-link) {
   justify-content: space-around;
   padding: 4px 0;
 }
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
