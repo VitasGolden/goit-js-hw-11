@@ -6,8 +6,9 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/goit-js-hw-11/', // Вказуємо базовий шлях для GitHub Pages
     define: {
-      [command === 'serve' ? 'global' : '_global']: {},
+      global: 'window', // Виправляємо помилку SimpleLightbox у продакшені
     },
     root: 'src',
     build: {
